@@ -1,0 +1,101 @@
+# Dogmatism 
+
+## Useful definitions
+
+* Axiom: A claim that cannot be proven 
+* Tautology: A statement that is always true
+* Contradiction: A statement that is always false
+
+## Priors 
+
+In my studies as an undergraduate mathematics major, one of the required courses was *Techniques of Proof*. 
+This class aims to teach students how to prove things absolutely. After learning formal logic, we were introduced to a system of axioms. 
+For logic to work, we have to have some base assumptions. In our day-to-day lives, priors act as our axioms or base assumptions. 
+
+Imagine you're in an elevator. In order to reach the 5th floor, you likely know, based on past experiences, that you need to press the button with the number 5 inscribed on it.
+
+<!-- TODO: add a picture of an elevator here once writing is finished (float right, like the De Morgan and hands figures) -->
+
+Consider the possible results from that button press:
+
+|        | Button Functions Normally | Button Malfunctions |
+|:-------|:-------------------------:|:-------------------:|
+| result | ?                         | ?                   |
+
+Assuming you have mostly only interacted with functional elevators, then you might rate your confidence in each outcome as:
+
+|        | Button Functions Normally | Button Malfunctions |
+|:-------|:-------------------------:|:-------------------:|
+| result | $90\%$                    | $10\%$              |
+
+These numbers are not measurements of how often the button works; they are a rating of how sure you feel.
+
+## Posteriors  
+
+The posterior is your updated confidence after seeing some evidence. Keeping the elevator example, imagine you are on the 3rd floor and the light indicating 
+someone is traveling upwards beeps on, and shortly after, a person steps out onto the 3rd floor. That acts as evidence that the elevator is currently functioning normally, and thus it would make sense to change your estimates.
+
+The weight or impact of the evidence here is not important, but you are probably more certain now. This would create your posteriors, and they might look like this:
+
+|        | Button Functions Normally | Button Malfunctions |
+|:-------|:-------------------------:|:-------------------:|
+| result | $95\%$                    | $5\%$               |
+
+Keep in mind these are not frequentist estimates. With these tables you are not saying that in a series of elevator 
+rides you always have a 95% chance of the button working normally; instead, these are subjective ratings, like how you may tell your doctor that
+on a scale of one to ten your pain is at a two. 
+
+## Dogma 
+
+Finally, let's create the dogmatic prior probability tables: 
+
+|        | Button Functions Normally | Button Malfunctions |
+|:-------|:-------------------------:|:-------------------:|
+| result | $0\%$                    | $100\%$              |
+
+or
+
+|        | Button Functions Normally | Button Malfunctions |
+|:-------|:-------------------------:|:-------------------:|
+| result | $100\%$                    | $0\%$              |
+
+In both cases, one of the choices is set to 100% certainty, which, outside of a tautology or contradiction, is considered malformed by most. The reason for this: what happens if the $0\%$ case turns out to be true? That would 
+contradict the claim carried by $0\%$ confidence, which is that x can never happen. This would be fairly clear if you shared the elevator with a person who fully claims that the button won't work, even after the elevator successfully arrives. 
+
+Thus, the dogmatic posteriors are:
+
+|        | Button Functions Normally | Button Malfunctions |
+|:-------|:-------------------------:|:-------------------:|
+| result | $0\%$                    | $100\%$              |
+
+or
+
+|        | Button Functions Normally | Button Malfunctions |
+|:-------|:-------------------------:|:-------------------:|
+| result | $100\%$                    | $0\%$              |
+
+In dogmatism, the priors always equal the posteriors, regardless of evidence.
+
+```{ojs}
+viewof certain = Inputs.range([0, 100], {label: html`certainty`, step: 0.1})
+
+dogma_score = function(score)
+{
+  if (score == 100 || score == 0)
+    return "Dogmatic"
+  else 
+    return "Not Dogmatic"
+}
+
+data = [
+{outcome: "yes", percent: certain, dogma: dogma_score(certain)},
+{outcome: "no",  percent: 100 - certain, dogma: dogma_score(100 - certain)}
+]
+
+Plot.barY(data, {x: "outcome", y: "percent", fill:"dogma"}).plot({
+  y: {domain: [0, 100]},
+color: {scheme: "BuRd", legend: true}
+  })
+
+```
+

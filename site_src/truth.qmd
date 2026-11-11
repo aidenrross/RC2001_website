@@ -1,0 +1,18 @@
+# What is truth? 
+
+Seems simple at first, but really, what is truth? An example of truth you may hear from a sermon is that $2+2=4$, but is that true? 
+Well, it is true that $2+2=4$ in the decimal system, but nobody is forcing us to use the decimal system. What if we use trinary or base-3?
+Base-3 is a system where we group things by 3 instead of 10 like in our normal decimal system. So if we have 2 things, that fits easily in our first group, but if we add 2 more things, we have 1 group of 3 and 1 group of 1. Written in normal notation:
+
+$$ 2 + 2 = 11 $$ 
+
+It is usual to assume decimal notation, so often we prefer to write it specifying the base as a subscript like this:
+
+$$ 2_3 + 2_3 = 11_3 $$
+
+That is an example of a system or model that we use to keep things simple. Unfortunately, I am not able to define truth for you, as to this day philosophers debate what truth is. Day-to-day, what tends to matter is if something works reliably and this often means creating models that are accurate for what we use them for but not truly representative of the core of how something functions.
+As humans, we are limited in this way: we have to define things to a limited precision.
+
+::: {style="float: right; margin-left: 20px; margin-bottom: 10px;"}
+![10 fingers makes base-10 seem easy](https://upload.wikimedia.org/wikipedia/commons/1/1b/Two_hand%2C_ten_fingers.jpg){#fig-hands width="400"}
+:::

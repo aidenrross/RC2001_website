@@ -1,0 +1,12 @@
+# Preface {.unnumbered}
+
+Augustus De Morgan wrote in ***A Budget of Paradoxes, Volume I***, 'Modern discoveries have not been made by large collections of facts, with subsequent discussion, separation, and resulting deduction of a truth thus rendered perceptible. A few facts have suggested an hypothesis, which means a supposition, proper to explain them.' 
+De Morgan was a British mathematician famous for De Morgan's laws in logic and set theory and for coining the term mathematical induction. 
+
+::: {style="float: right; margin-left: 20px; margin-bottom: 10px;"}
+![Augustus De Morgan](https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/De_Morgan_Augustus.jpg/500px-De_Morgan_Augustus.jpg){#fig-demorgan width="250"}
+:::
+
+When he authored this book, he used an old meaning of the word paradoxes. He explains this in the introduction: "I use the word in the old sense: a paradox is something which is apart from general opinion, either in subject-matter, method, or conclusion."
+
+
