@@ -5,7 +5,7 @@ Finally, before reaching the primary topic of this site, there is one last topic
 In mathematics, models have a formal definition, but it isn't really necessary to use it here. The important thing is
 that a model uses assumptions and works within a given universe.
 
-For example, consider the band Ghost. In 2013 they released a cover of Roky Erickson's song "If You Have Ghosts". One of the lines in the lyrics reads almost like an implication: "If you have ghosts, you have everything."
+For example, consider the band Ghost. In 2013 they released a cover of Roky Erickson's song "If You Have Ghosts" [@ghost2013]. One of the lines in the lyrics reads almost like an implication: "If you have ghosts, you have everything."
 Normally you would read this metaphorically, but if we change the model through definitions, we can change the meaning.
 
 Let *ghosts* mean specifically the band, and let *everything* be defined as music. These definitions will make up our model.

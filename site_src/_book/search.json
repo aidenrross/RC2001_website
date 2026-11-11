@@ -1,0 +1,122 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Should we trust academia?",
+    "section": "",
+    "text": "Preface\nAugustus De Morgan wrote in A Budget of Paradoxes, Volume I, “Modern discoveries have not been made by large collections of facts, with subsequent discussion, separation, and resulting deduction of a truth thus rendered perceptible. A few facts have suggested an hypothesis, which means a supposition, proper to explain them.” (De Morgan 1872) De Morgan was a British mathematician famous for De Morgan’s laws in logic and set theory and for coining the term mathematical induction.\n\n\n\n\n\n\n\nFigure 1: Augustus De Morgan, from Memoir of Augustus De Morgan (De Morgan 1882), via Wikimedia Commons\n\n\n\n\nWhen he authored this book, he used an old meaning of the word paradox. He explains this in the introduction: “I use the word in the old sense: a paradox is something which is apart from general opinion, either in subject-matter, method, or conclusion.”\n\n\n\n\nDe Morgan, Augustus. 1872. A Budget of Paradoxes. Edited by Sophia De Morgan. Vol. 1. Longmans, Green,; Co.\n\n\nDe Morgan, Sophia Elizabeth. 1882. Memoir of Augustus De Morgan. Longmans, Green,; Co.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "truth.html",
+    "href": "truth.html",
+    "title": "1  What is truth?",
+    "section": "",
+    "text": "Seems simple at first, but really, what is truth? An example of truth you may hear from a sermon is that \\(2+2=4\\), but is that true? Well, it is true that \\(2+2=4\\) in the decimal system, but nobody is forcing us to use the decimal system. What if we use ternary, or base-3? Base-3 is a system where we group things by 3 instead of 10 like in our normal decimal system. So if we have 2 things, that fits easily in our first group, but if we add 2 more things, we have 1 group of 3 and 1 group of 1. Written in normal notation:\n\\[ 2 + 2 = 11 \\]\nIt is usual to assume decimal notation, so often we prefer to write it specifying the base as a subscript like this:\n\\[ 2_3 + 2_3 = 11_3 \\]\nThat is an example of a system or model that we use to keep things simple. Unfortunately, I am not able to define truth for you, as to this day philosophers debate what truth is. Day-to-day, what tends to matter is whether something works reliably, and this often means creating models that are accurate for what we use them for but not truly representative of the core of how something functions. As humans, we are limited in this way: we have to define things to a limited precision.\n\n\n\n\n\n\n\nFigure 1.1: 10 fingers makes base-10 seem easy. Photo by Maher27777, public domain, via Wikimedia Commons.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is truth?</span>"
+    ]
+  },
+  {
+    "objectID": "dogma.html",
+    "href": "dogma.html",
+    "title": "2  Dogmatism",
+    "section": "",
+    "text": "2.1 Useful definitions",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dogmatism</span>"
+    ]
+  },
+  {
+    "objectID": "dogma.html#useful-definitions",
+    "href": "dogma.html#useful-definitions",
+    "title": "2  Dogmatism",
+    "section": "",
+    "text": "Axiom: A claim accepted as true without proof\nTautology: A statement that is always true\nContradiction: A statement that is always false",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dogmatism</span>"
+    ]
+  },
+  {
+    "objectID": "dogma.html#priors",
+    "href": "dogma.html#priors",
+    "title": "2  Dogmatism",
+    "section": "2.2 Priors",
+    "text": "2.2 Priors\nIn my studies as an undergraduate mathematics major, one of the required courses was Techniques of Proof. This class aims to teach students how to prove things absolutely. After learning formal logic, we were introduced to a system of axioms. For logic to work, we have to have some base assumptions. In our day-to-day lives, priors act as our axioms or base assumptions.\nImagine you’re in an elevator. In order to reach the 5th floor, you likely know, based on past experiences, that you need to press the button with the number 5 inscribed on it.\n\nConsider the possible results from that button press:\n\n\n\n\nButton Functions Normally\nButton Malfunctions\n\n\n\n\nresult\n?\n?\n\n\n\nAssuming you have mostly only interacted with functional elevators, then you might rate your confidence in each outcome as:\n\n\n\n\nButton Functions Normally\nButton Malfunctions\n\n\n\n\nresult\n\\(90\\%\\)\n\\(10\\%\\)\n\n\n\nThese numbers are not measurements of how often the button works; they are a rating of how sure you feel.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dogmatism</span>"
+    ]
+  },
+  {
+    "objectID": "dogma.html#posteriors",
+    "href": "dogma.html#posteriors",
+    "title": "2  Dogmatism",
+    "section": "2.3 Posteriors",
+    "text": "2.3 Posteriors\nThe posterior is your updated confidence after seeing some evidence. Keeping the elevator example, imagine you are on the 3rd floor and the light indicating someone is traveling upwards beeps on, and shortly after, a person steps out onto the 3rd floor. That acts as evidence that the elevator is currently functioning normally, and thus it would make sense to change your estimates.\nThe weight or impact of the evidence here is not important, but you are probably more certain now. This would create your posteriors, and they might look like this:\n\n\n\n\nButton Functions Normally\nButton Malfunctions\n\n\n\n\nresult\n\\(95\\%\\)\n\\(5\\%\\)\n\n\n\nKeep in mind these are not frequentist estimates. With these tables you are not saying that in a series of elevator rides you always have a \\(95\\%\\) chance of the button working normally; instead, these are subjective ratings, like how you may tell your doctor that on a scale of one to ten your pain is at a two.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dogmatism</span>"
+    ]
+  },
+  {
+    "objectID": "dogma.html#dogma",
+    "href": "dogma.html#dogma",
+    "title": "2  Dogmatism",
+    "section": "2.4 Dogma",
+    "text": "2.4 Dogma\nFinally, let’s create the dogmatic prior probability tables:\n\n\n\n\nButton Functions Normally\nButton Malfunctions\n\n\n\n\nresult\n\\(0\\%\\)\n\\(100\\%\\)\n\n\n\nor\n\n\n\n\nButton Functions Normally\nButton Malfunctions\n\n\n\n\nresult\n\\(100\\%\\)\n\\(0\\%\\)\n\n\n\nIn both cases, one of the choices is set to 100% certainty, which, outside of a tautology or contradiction, is considered malformed by most. The reason for this: what happens if the \\(0\\%\\) case turns out to be true? That would contradict the claim carried by \\(0\\%\\) confidence, which is that the outcome can never happen. This would be fairly clear if you shared the elevator with a person who insists that the button won’t work, even after the elevator successfully arrives.\nThus, the dogmatic posteriors are:\n\n\n\n\nButton Functions Normally\nButton Malfunctions\n\n\n\n\nresult\n\\(0\\%\\)\n\\(100\\%\\)\n\n\n\nor\n\n\n\n\nButton Functions Normally\nButton Malfunctions\n\n\n\n\nresult\n\\(100\\%\\)\n\\(0\\%\\)\n\n\n\nIn dogmatism, the priors always equal the posteriors, regardless of evidence.\n\nviewof certain = Inputs.range([0, 100], {label: \"Confidence the button works (%)\", step: 0.1, value: 90})\n\ndogma_score = function(score)\n{\n  if (score == 100 || score == 0)\n    return \"Dogmatic\"\n  else\n    return \"Not Dogmatic\"\n}\n\ndata = [\n  {outcome: \"Button Functions Normally\", percent: certain,       dogma: dogma_score(certain)},\n  {outcome: \"Button Malfunctions\",       percent: 100 - certain, dogma: dogma_score(100 - certain)}\n]\n\nPlot.barY(data, {x: \"outcome\", y: \"percent\", fill: \"dogma\"}).plot({\n  x: {label: null, domain: [\"Button Functions Normally\", \"Button Malfunctions\"]},\n  y: {label: \"Confidence (%)\", domain: [0, 100]},\n  color: {domain: [\"Not Dogmatic\", \"Dogmatic\"], range: [\"#4e79a7\", \"#e15759\"], legend: true}\n})",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Dogmatism</span>"
+    ]
+  },
+  {
+    "objectID": "models.html",
+    "href": "models.html",
+    "title": "3  Models and Systems",
+    "section": "",
+    "text": "3.1 Models\nFinally, before reaching the primary topic of this site, there is one last topic I would like to explain. In mathematics, models have a formal definition, but it isn’t really necessary to use it here. The important thing is that a model uses assumptions and works within a given universe.\nFor example, consider the band Ghost. In 2013 they released a cover of Roky Erickson’s song “If You Have Ghosts” (Ghost 2013). One of the lines in the lyrics reads almost like an implication: “If you have ghosts, you have everything.” Normally you would read this metaphorically, but if we change the model through definitions, we can change the meaning.\nLet ghosts mean specifically the band, and let everything be defined as music. These definitions will make up our model. Then consider that if you listen to Ghost’s cover, you have ghosts. Thus, in our model, by modus ponens we have everything, or in other words, we have music.\nFor a more formal version of this quasi-proof:\nModels, however, are bound by their definitions and constraints. This means that if you change the assumptions of the model, you can change the output of the model.\nWith our previous example, if we define ghosts as something always true, such as the tautology “it is raining or it is not raining”, and define everything as the contradiction “it is cold and it is not cold”, then we have changed the model:\nThis shows how an argument can be logically valid but not sound because of the model it is in. Expanding a model to work with a large number of things means introducing a universe.\nFor this example, I will use all dogs as our universe. We can say that every dog in our universe must be a mammal.\nA formalized version of that would be:\nLet \\(S\\) be the set of all dogs and \\(M\\) be the set of all mammals.\n\\[\n\\forall e \\in S,\\ e \\in M\n\\]\nThis is a complicated way of saying that if we put all the dogs in one group and all the mammals in another, the group of dogs is fully contained in the group of mammals.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Models and Systems</span>"
+    ]
+  },
+  {
+    "objectID": "models.html#models",
+    "href": "models.html#models",
+    "title": "3  Models and Systems",
+    "section": "",
+    "text": "Proof.  \nDefinitions for the model, followed by modus ponens:\n\\[\n\\begin{array}{l}\n\\text{ghosts} := \\text{the band Ghost} \\\\\n\\text{everything} := \\text{music} \\\\[1em]\n\\text{ghosts} \\implies \\text{everything} \\\\\n\\text{ghosts} \\\\\n\\hline\n\\therefore \\text{everything}\n\\end{array}\n\\]\n\n\n\n\nProof.  \n\\[\n\\begin{array}{l}\n\\text{ghosts} := \\text{it is raining or it is not raining} \\\\\n\\text{everything} := \\text{it is cold and it is not cold} \\\\[1em]\n\\text{ghosts} \\implies \\text{everything} \\\\\n\\text{ghosts} \\\\\n\\hline\n\\therefore \\text{everything}\n\\end{array}\n\\]",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Models and Systems</span>"
+    ]
+  },
+  {
+    "objectID": "models.html#systems",
+    "href": "models.html#systems",
+    "title": "3  Models and Systems",
+    "section": "3.2 Systems",
+    "text": "3.2 Systems\nGenerally, a system is a collection of interacting parts. Reading this website requires several systems working together. Consider the nervous system: a group of cells that work together for sensation, among other things. As an organism, you have a myriad of systems keeping you functional and alive. More importantly, notice how the cardiovascular system has different parts that depend on each other, such as how the heart moves the blood but depends on the lungs to oxygenate it. Apart from the organic systems powering you and me, in order for this website to be accessible, you need some sort of computer system. This computer system could be a phone, a laptop, or something else. A phone seems like a single self-contained thing, but inside is a system of parts and circuits working together to produce a response to each input. Systems can be social, too: a club or a church is a system of people.\n\n\n\n\nGhost. 2013. If You Have Ghosts. On If You Have Ghost [EP], Loma Vista Recordings.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Models and Systems</span>"
+    ]
+  },
+  {
+    "objectID": "academia.html",
+    "href": "academia.html",
+    "title": "4  So should we trust academia?",
+    "section": "",
+    "text": "By this point, we have learned a little bit about truth, models, systems, and dogma.\nPerhaps “should we trust academia?” isn’t the correct question. Maybe instead we should be asking how much we should trust academia, or when we should trust academia.\nIn this regard, I think the answer is context-dependent and subjective. The primary point that I think should be considered is whether academia is able to update in response to new information. Research in many areas follows this exactly, which is why it can feel like researchers don’t know what they are talking about. Remember that believing we know something exactly, with no uncertainty at all, is dogma. Another important point is that a consensus built on research represents high certainty based on evidence. Academic institutions are not a monolith, so consensus is one of the most valuable pieces of evidence that we have. If research results hold up consistently regardless of which institution produces them, then we can be confident that we are heading in the right direction.\n\nA paper titled “Feeling the Future” hypothesized psi (Bem 2011). The evidence appeared solid and the methods were standard for the field, but with the power of Bayesianism, we are able to see that, due to the low priors, the posterior should not be moved much on the strength of a single work.\n\n\n\n\nBem, Daryl J. 2011. “Feeling the Future: Experimental Evidence for Anomalous Retroactive Influences on Cognition and Affect.” Journal of Personality and Social Psychology 100 (3): 407–25. https://doi.org/10.1037/a0021524.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>So should we trust academia?</span>"
+    ]
+  },
+  {
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "References",
+    "section": "",
+    "text": "Bem, Daryl J. 2011. “Feeling the Future: Experimental\nEvidence for Anomalous Retroactive Influences on Cognition and\nAffect.” Journal of Personality and Social Psychology\n100 (3): 407–25. https://doi.org/10.1037/a0021524.\n\n\nDe Morgan, Augustus. 1872. A Budget of Paradoxes. Edited by\nSophia De Morgan. Vol. 1. Longmans, Green,; Co.\n\n\nDe Morgan, Sophia Elizabeth. 1882. Memoir of Augustus\nDe Morgan. Longmans, Green,; Co.\n\n\nGhost. 2013. If You Have Ghosts. On If You Have Ghost\n[EP], Loma Vista Recordings.",
+    "crumbs": [
+      "References"
+    ]
+  }
+]

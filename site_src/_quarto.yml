@@ -13,8 +13,7 @@ book:
     - truth.qmd
     - dogma.qmd
     - models.qmd
-    - pathos.qmd
-    - summary.qmd
+    - academia.qmd
     - references.qmd
 
 bibliography: references.bib

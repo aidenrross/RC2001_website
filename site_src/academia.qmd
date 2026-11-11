@@ -1,0 +1,15 @@
+# So should we trust academia?
+
+By this point, we have learned a little bit about truth, models, systems, and dogma.
+
+Perhaps "should we trust academia?" isn't the correct question. Maybe instead we should be asking how much we should trust academia, or when we should trust academia.
+
+In this regard, I think the answer is context-dependent and subjective. The primary point that I think should be considered is whether academia is able to update in response to new information.
+Research in many areas follows this exactly, which is why it can feel like researchers don't know what they are talking about.
+Remember that believing we know something exactly, with no uncertainty at all, is dogma. Another important point is that a consensus built on research represents
+high certainty based on evidence. Academic institutions are not a monolith, so consensus is one of the most valuable pieces of evidence that we have.
+If research results hold up consistently regardless of which institution produces them, then we can be confident that we are heading in the right direction.
+
+<!-- TODO: transition sentence(s) here -->
+A paper titled "Feeling the Future" hypothesized psi [@bem_feeling_2011]. The evidence appeared solid and the methods were standard for the field, but with the power of Bayesianism, we are able to see that,
+due to the low priors, the posterior should not be moved much on the strength of a single work.
