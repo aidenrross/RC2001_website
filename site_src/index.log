@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.11.5)  11 NOV 2026 11:29
+This is LuaHBTeX, Version 1.24.0 (TeX Live 2026)  (format=lualatex 2026.11.11)  11 NOV 2026 14:34
  restricted system commands enabled.
 **index.tex
 (./index.tex
@@ -606,7 +606,12 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
+) (/usr/share/texlive/texmf-dist/tex/latex/upquote/upquote.sty
+Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verba
+tim
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)) (/usr/share/texlive/texmf-dist/tex/latex/microtype/microtype.sty
 Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
 \MT@toks=\toks23
 \MT@tempbox=\box57
@@ -657,13 +662,13 @@ l.75 \definecolor
                {shadecolor}{RGB}{241,243,245}
 
 Here is how much of LuaTeX's memory you used:
- 14500 strings out of 475900
+ 14551 strings out of 475900
  100000,1144653 words of node,token memory allocated
  436 words of node memory still in use:
    3 hlist, 1 rule, 1 dir, 3 kern, 1 glyph, 5 attribute, 56 glue_spec, 5 attribu
 te_list, 1 write, 1 pdf_colorstack nodes
    avail lists: 2:21,3:2,5:5,6:1,7:29,9:2,11:3
- 37010 multiletter control sequences out of 65536+600000
+ 37051 multiletter control sequences out of 65536+600000
  16 fonts using 855119 bytes
  108i,1n,101p,11226b,343s stack positions out of 10000i,1000n,20000p,200000b,200000s
 !  ==> Fatal error occurred, no output PDF file produced!
