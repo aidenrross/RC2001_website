@@ -236,13 +236,13 @@
 
 \markboth{Preface}{Preface}
 
-Augustus De Morgan wrote in \textbf{\emph{A Budget of Paradoxes, Volume
-I}}, `Modern discoveries have not been made by large collections of
-facts, with subsequent discussion, separation, and resulting deduction
-of a truth thus rendered perceptible. A few facts have suggested an
-hypothesis, which means a supposition, proper to explain them.' De
+Augustus De Morgan wrote in \emph{A Budget of Paradoxes, Volume I},
+``Modern discoveries have not been made by large collections of facts,
+with subsequent discussion, separation, and resulting deduction of a
+truth thus rendered perceptible. A few facts have suggested an
+hypothesis, which means a supposition, proper to explain them.'' De
 Morgan was a British mathematician famous for De Morgan's laws in logic
-and set theory and for coining the term mathematical induction.
+and set theory and for coining the term \emph{mathematical induction}.
 
 \begin{figure}
 
@@ -257,9 +257,9 @@ and set theory and for coining the term mathematical induction.
 \end{figure}%
 
 When he authored this book, he used an old meaning of the word
-paradoxes. He explains this in the introduction: ``I use the word in the
-old sense: a paradox is something which is apart from general opinion,
-either in subject-matter, method, or conclusion.''
+\emph{paradox}. He explains this in the introduction: ``I use the word
+in the old sense: a paradox is something which is apart from general
+opinion, either in subject-matter, method, or conclusion.''
 
 \bookmarksetup{startatroot}
 
@@ -268,8 +268,8 @@ either in subject-matter, method, or conclusion.''
 Seems simple at first, but really, what is truth? An example of truth
 you may hear from a sermon is that \(2+2=4\), but is that true? Well, it
 is true that \(2+2=4\) in the decimal system, but nobody is forcing us
-to use the decimal system. What if we use trinary or base-3? Base-3 is a
-system where we group things by 3 instead of 10 like in our normal
+to use the decimal system. What if we use ternary, or base-3? Base-3 is
+a system where we group things by 3 instead of 10 like in our normal
 decimal system. So if we have 2 things, that fits easily in our first
 group, but if we add 2 more things, we have 1 group of 3 and 1 group of
 1. Written in normal notation:
@@ -284,10 +284,10 @@ specifying the base as a subscript like this:
 That is an example of a system or model that we use to keep things
 simple. Unfortunately, I am not able to define truth for you, as to this
 day philosophers debate what truth is. Day-to-day, what tends to matter
-is if something works reliably and this often means creating models that
-are accurate for what we use them for but not truly representative of
-the core of how something functions. As humans, we are limited in this
-way: we have to define things to a limited precision.
+is whether something works reliably, and this often means creating
+models that are accurate for what we use them for but not truly
+representative of the core of how something functions. As humans, we are
+limited in this way: we have to define things to a limited precision.
 
 \begin{figure}
 
@@ -310,7 +310,7 @@ way: we have to define things to a limited precision.
 \begin{itemize}
 \tightlist
 \item
-  Axiom: A claim that cannot be proven
+  Axiom: A claim accepted as true without proof
 \item
   Tautology: A statement that is always true
 \item
@@ -388,10 +388,10 @@ result & \(95\%\) & \(5\%\) \\
 }
 
 Keep in mind these are not frequentist estimates. With these tables you
-are not saying that in a series of elevator rides you always have a 95\%
-chance of the button working normally; instead, these are subjective
-ratings, like how you may tell your doctor that on a scale of one to ten
-your pain is at a two.
+are not saying that in a series of elevator rides you always have a
+\(95\%\) chance of the button working normally; instead, these are
+subjective ratings, like how you may tell your doctor that on a scale of
+one to ten your pain is at a two.
 
 \section{Dogma}\label{dogma}
 
@@ -427,9 +427,9 @@ In both cases, one of the choices is set to 100\% certainty, which,
 outside of a tautology or contradiction, is considered malformed by
 most. The reason for this: what happens if the \(0\%\) case turns out to
 be true? That would contradict the claim carried by \(0\%\) confidence,
-which is that x can never happen. This would be fairly clear if you
-shared the elevator with a person who fully claims that the button won't
-work, even after the elevator successfully arrives.
+which is that the outcome can never happen. This would be fairly clear
+if you shared the elevator with a person who insists that the button
+won't work, even after the elevator successfully arrives.
 
 Thus, the dogmatic posteriors are:
 
@@ -464,25 +464,26 @@ evidence.
 
 \begin{Shaded}
 \begin{Highlighting}[]
-\NormalTok{viewof certain = Inputs.range([0, 100], \{label: html\textasciigrave{}certainty\textasciigrave{}, step: 0.1\})}
+\NormalTok{viewof certain = Inputs.range([0, 100], \{label: "Confidence the button works (\%)", step: 0.1, value: 90\})}
 
 \NormalTok{dogma\_score = function(score)}
 \NormalTok{\{}
 \NormalTok{  if (score == 100 || score == 0)}
 \NormalTok{    return "Dogmatic"}
-\NormalTok{  else }
+\NormalTok{  else}
 \NormalTok{    return "Not Dogmatic"}
 \NormalTok{\}}
 
 \NormalTok{data = [}
-\NormalTok{\{outcome: "yes", percent: certain, dogma: dogma\_score(certain)\},}
-\NormalTok{\{outcome: "no",  percent: 100 {-} certain, dogma: dogma\_score(100 {-} certain)\}}
+\NormalTok{  \{outcome: "Button Functions Normally", percent: certain,       dogma: dogma\_score(certain)\},}
+\NormalTok{  \{outcome: "Button Malfunctions",       percent: 100 {-} certain, dogma: dogma\_score(100 {-} certain)\}}
 \NormalTok{]}
 
-\NormalTok{Plot.barY(data, \{x: "outcome", y: "percent", fill:"dogma"\}).plot(\{}
-\NormalTok{  y: \{domain: [0, 100]\},}
-\NormalTok{color: \{scheme: "BuRd", legend: true\}}
-\NormalTok{  \})}
+\NormalTok{Plot.barY(data, \{x: "outcome", y: "percent", fill: "dogma"\}).plot(\{}
+\NormalTok{  x: \{label: null, domain: ["Button Functions Normally", "Button Malfunctions"]\},}
+\NormalTok{  y: \{label: "Confidence (\%)", domain: [0, 100]\},}
+\NormalTok{  color: \{domain: ["Not Dogmatic", "Dogmatic"], range: ["\#4e79a7", "\#e15759"], legend: true\}}
+\NormalTok{\})}
 \end{Highlighting}
 \end{Shaded}
 
@@ -490,21 +491,25 @@ evidence.
 
 \chapter{Models and Systems}\label{models-and-systems}
 
-Finally, before reaching the primary topic of this site we have one last
-topic I would like to explain. In mathematics models have a formal
-definition but it isn't really necessary to use it here. The important
-thing is that a model uses assumptions and works on a given universe.
+\section{Models}\label{models}
 
-For example, consider the band Ghost. In 2013 they did a cover of a song
-\emph{If You Have Ghost}. In the lyrics one of the lines reads almost
-like an implication: ``If you have ghosts, you have everything''.
-Normally you could read this meaning metaphorically but if we change the
-model through definitions we can change the meaning.
+Finally, before reaching the primary topic of this site, there is one
+last topic I would like to explain. In mathematics, models have a formal
+definition, but it isn't really necessary to use it here. The important
+thing is that a model uses assumptions and works within a given
+universe.
 
-Let ghosts mean specifically the band and let everything be defined as
-music. This will be our definition for the model. Then consider that if
-you listen to Ghost's cover that you have ghosts. Thus in our model by
-modus ponens we have everything or in other words we have music.
+For example, consider the band Ghost. In 2013 they released a cover of
+Roky Erickson's song ``If You Have Ghosts''. One of the lines in the
+lyrics reads almost like an implication: ``If you have ghosts, you have
+everything.'' Normally you would read this metaphorically, but if we
+change the model through definitions, we can change the meaning.
+
+Let \emph{ghosts} mean specifically the band, and let \emph{everything}
+be defined as music. These definitions will make up our model. Then
+consider that if you listen to Ghost's cover, you have ghosts. Thus, in
+our model, by modus ponens we have everything, or in other words, we
+have music.
 
 For a more formal version of this quasi-proof:
 
@@ -525,14 +530,64 @@ Definitions for the model, followed by modus ponens:
 \]
 \end{proof}
 
-Here our universe includes the band ghosts and music but if we used
-other definitions that did not work that would make the statement
-incorrect. For example, consider that as a human I am pretty sure that I
-can not fly. So if I defined ghosts to mean human and music to mean
-flight then the implication becomes false making it nonsensacle. The
-important thing to note is legs and the ability to fly in a given moment
-are not related for the most part so I could make the statement true by
-just getting on a plain.
+Models, however, are bound by their definitions and constraints. This
+means that if you change the assumptions of the model, you can change
+the output of the model.
+
+With our previous example, if we define \emph{ghosts} as something
+always true, such as the tautology ``it is raining or it is not
+raining'', and define \emph{everything} as the contradiction ``it is
+cold and it is not cold'', then we have changed the model:
+
+\begin{proof}
+~
+
+\[
+\begin{array}{l}
+\text{ghosts} := \text{it is raining or it is not raining} \\
+\text{everything} := \text{it is cold and it is not cold} \\[1em]
+\text{ghosts} \implies \text{everything} \\
+\text{ghosts} \\
+\hline
+\therefore \text{everything}
+\end{array}
+\]
+\end{proof}
+
+This shows how an argument can be logically valid but not sound because
+of the model it is in. Expanding a model to work with a large number of
+things means introducing a universe.
+
+For this example, I will use all dogs as our universe. We can say that
+every dog in our universe must be a mammal.
+
+A formalized version of that would be:
+
+Let \(S\) be the set of all dogs and \(M\) be the set of all mammals.
+
+\[
+\forall e \in S,\ e \in M
+\]
+
+This is a complicated way of saying that if we put all the dogs in one
+group and all the mammals in another, the group of dogs is fully
+contained in the group of mammals.
+
+\section{Systems}\label{systems}
+
+Generally, a system is a collection of interacting parts. Reading this
+website requires several systems working together. Consider the nervous
+system: a group of cells that work together for sensation, among other
+things. As an organism, you have a myriad of systems keeping you
+functional and alive. More importantly, notice how the cardiovascular
+system has different parts that depend on each other, such as how the
+heart moves the blood but depends on the lungs to oxygenate it. Apart
+from the organic systems powering you and me, in order for this website
+to be accessible, you need some sort of computer system. This computer
+system could be a phone, a laptop, or something else. A phone seems like
+a single self-contained thing, but inside is a system of parts and
+circuits working together to produce a response to each input. Systems
+can be social, too: a club or a church is a system of people.
 
 \bookmarksetup{startatroot}
 

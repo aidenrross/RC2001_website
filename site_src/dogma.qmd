@@ -2,7 +2,7 @@
 
 ## Useful definitions
 
-* Axiom: A claim that cannot be proven 
+* Axiom: A claim accepted as true without proof
 * Tautology: A statement that is always true
 * Contradiction: A statement that is always false
 
@@ -42,7 +42,7 @@ The weight or impact of the evidence here is not important, but you are probably
 | result | $95\%$                    | $5\%$               |
 
 Keep in mind these are not frequentist estimates. With these tables you are not saying that in a series of elevator 
-rides you always have a 95% chance of the button working normally; instead, these are subjective ratings, like how you may tell your doctor that
+rides you always have a $95\%$ chance of the button working normally; instead, these are subjective ratings, like how you may tell your doctor that
 on a scale of one to ten your pain is at a two. 
 
 ## Dogma 
@@ -51,51 +51,51 @@ Finally, let's create the dogmatic prior probability tables:
 
 |        | Button Functions Normally | Button Malfunctions |
 |:-------|:-------------------------:|:-------------------:|
-| result | $0\%$                    | $100\%$              |
+| result | $0\%$                     | $100\%$             |
 
 or
 
 |        | Button Functions Normally | Button Malfunctions |
 |:-------|:-------------------------:|:-------------------:|
-| result | $100\%$                    | $0\%$              |
+| result | $100\%$                   | $0\%$               |
 
 In both cases, one of the choices is set to 100% certainty, which, outside of a tautology or contradiction, is considered malformed by most. The reason for this: what happens if the $0\%$ case turns out to be true? That would 
-contradict the claim carried by $0\%$ confidence, which is that x can never happen. This would be fairly clear if you shared the elevator with a person who fully claims that the button won't work, even after the elevator successfully arrives. 
+contradict the claim carried by $0\%$ confidence, which is that the outcome can never happen. This would be fairly clear if you shared the elevator with a person who insists that the button won't work, even after the elevator successfully arrives. 
 
 Thus, the dogmatic posteriors are:
 
 |        | Button Functions Normally | Button Malfunctions |
 |:-------|:-------------------------:|:-------------------:|
-| result | $0\%$                    | $100\%$              |
+| result | $0\%$                     | $100\%$             |
 
 or
 
 |        | Button Functions Normally | Button Malfunctions |
 |:-------|:-------------------------:|:-------------------:|
-| result | $100\%$                    | $0\%$              |
+| result | $100\%$                   | $0\%$               |
 
 In dogmatism, the priors always equal the posteriors, regardless of evidence.
 
 ```{ojs}
-viewof certain = Inputs.range([0, 100], {label: html`certainty`, step: 0.1})
+viewof certain = Inputs.range([0, 100], {label: "Confidence the button works (%)", step: 0.1, value: 90})
 
 dogma_score = function(score)
 {
   if (score == 100 || score == 0)
     return "Dogmatic"
-  else 
+  else
     return "Not Dogmatic"
 }
 
 data = [
-{outcome: "yes", percent: certain, dogma: dogma_score(certain)},
-{outcome: "no",  percent: 100 - certain, dogma: dogma_score(100 - certain)}
+  {outcome: "Button Functions Normally", percent: certain,       dogma: dogma_score(certain)},
+  {outcome: "Button Malfunctions",       percent: 100 - certain, dogma: dogma_score(100 - certain)}
 ]
 
-Plot.barY(data, {x: "outcome", y: "percent", fill:"dogma"}).plot({
-  y: {domain: [0, 100]},
-color: {scheme: "BuRd", legend: true}
-  })
-
+Plot.barY(data, {x: "outcome", y: "percent", fill: "dogma"}).plot({
+  x: {label: null, domain: ["Button Functions Normally", "Button Malfunctions"]},
+  y: {label: "Confidence (%)", domain: [0, 100]},
+  color: {domain: ["Not Dogmatic", "Dogmatic"], range: ["#4e79a7", "#e15759"], legend: true}
+})
 ```
 

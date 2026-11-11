@@ -1,16 +1,16 @@
 # Models and Systems
 
 ## Models
-Finally, before reaching the primary topic of this site we have one last topic I would like to explain.
-In mathematics models have a formal definition but it isn't really necessary to use it here. The important thing is 
-that a model uses assumptions and works on a given universe. 
+Finally, before reaching the primary topic of this site, there is one last topic I would like to explain.
+In mathematics, models have a formal definition, but it isn't really necessary to use it here. The important thing is
+that a model uses assumptions and works within a given universe.
 
-For example, consider the band Ghost. In 2013 they did a cover of a song *If You Have Ghost*. In the lyrics one of the lines reads almost like an implication: "If you have ghosts, you have everything". 
-Normally you could read this meaning metaphorically but if we change the model through definitions we can change the meaning. 
+For example, consider the band Ghost. In 2013 they released a cover of Roky Erickson's song "If You Have Ghosts". One of the lines in the lyrics reads almost like an implication: "If you have ghosts, you have everything."
+Normally you would read this metaphorically, but if we change the model through definitions, we can change the meaning.
 
-Let ghosts mean specifically the band and let everything be defined as music. This will be our definition for the model. 
-Then consider that if you listen to Ghost's cover that you have ghosts.
-Thus in our model by modus ponens we have everything or in other words we have music. 
+Let *ghosts* mean specifically the band, and let *everything* be defined as music. These definitions will make up our model.
+Then consider that if you listen to Ghost's cover, you have ghosts.
+Thus, in our model, by modus ponens we have everything, or in other words, we have music.
 
 For a more formal version of this quasi-proof:
 
@@ -31,13 +31,16 @@ $$
 $$
 :::
 
-Models however are definition and constraint bound. This means if you change the assumptions of the model it can change the output of the model.
+Models, however, are bound by their definitions and constraints. This means that if you change the assumptions of the model, you can change the output of the model.
 
-With our previous example if we define ghosts as something true we could use a tautology such as it is raining or it is not raining and define everything as it is cold and it is not cold then we change the model.
+With our previous example, if we define *ghosts* as something always true, such as the tautology "it is raining or it is not raining", and define *everything* as the contradiction "it is cold and it is not cold", then we have changed the model:
+
+::: {.proof}
+\ 
 
 $$
 \begin{array}{l}
-\text{ghosts} := \text{It is raining or it is not raining} \\
+\text{ghosts} := \text{it is raining or it is not raining} \\
 \text{everything} := \text{it is cold and it is not cold} \\[1em]
 \text{ghosts} \implies \text{everything} \\
 \text{ghosts} \\
@@ -47,27 +50,26 @@ $$
 $$
 :::
 
-This shows how a statement can be logically valid but not sound due to the model it is in. Expanding a model to 
-allow working with a large number of things means introducing a unverse. 
+This shows how an argument can be logically valid but not sound because of the model it is in. Expanding a model to
+work with a large number of things means introducing a universe.
 
-For this example I will use all dogs as our universe. We can say for all dogs in our universe that each dog must be a mammal. 
+For this example, I will use all dogs as our universe. We can say that every dog in our universe must be a mammal.
 
-A formalised version of that would be:
+A formalized version of that would be:
 
 Let $S$ be the set of all dogs and $M$ be the set of all mammals.
 
 $$
- \forall e \in S, e \in M$
+\forall e \in S,\ e \in M
 $$
 
-This is a complicated way of saying if we have all the dogs in a group and all the mammals in a group that the group of dogs is fully contained in the mammal group.
+This is a complicated way of saying that if we put all the dogs in one group and all the mammals in another, the group of dogs is fully contained in the group of mammals.
 
 ## Systems
 
-A system generally is simular to just a collection of interactions. Reading this website requires the use of several systems working together. 
-Consider the nervous system a group of cells that work together for sensation among other things. As an organism you have a myriad of systems keeping you functional and alive. 
-More importantly notice how the cardiovasular system has different parts dependent on each other such as how the heart moves the blood but is dependent on the lungs to oxegenate them. 
-Apart from the organic systems powering you and me in order for this website to be assesable you need some sort of computer system. 
-This computer system could be a phone, laptop, or something else. In the case of a phone it seems like a single self contained thing but inside is a system of parts and circuits 
-working together to produce an active response to each input. A social system could be a club or church.
-
+Generally, a system is a collection of interacting parts. Reading this website requires several systems working together.
+Consider the nervous system: a group of cells that work together for sensation, among other things. As an organism, you have a myriad of systems keeping you functional and alive.
+More importantly, notice how the cardiovascular system has different parts that depend on each other, such as how the heart moves the blood but depends on the lungs to oxygenate it.
+Apart from the organic systems powering you and me, in order for this website to be accessible, you need some sort of computer system.
+This computer system could be a phone, a laptop, or something else. A phone seems like a single self-contained thing, but inside is a system of parts and circuits
+working together to produce a response to each input. Systems can be social, too: a club or a church is a system of people.
