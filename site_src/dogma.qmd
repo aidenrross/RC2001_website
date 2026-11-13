@@ -14,7 +14,9 @@ For logic to work, we have to have some base assumptions. In our day-to-day live
 
 Imagine you're in an elevator. In order to reach the 5th floor, you likely know, based on past experiences, that you need to press the button with the number 5 inscribed on it.
 
-<!-- TODO: add a picture of an elevator here once writing is finished (float right, like the De Morgan and hands figures) -->
+::: {style="float: right; margin-left: 20px; margin-bottom: 10px;"}
+![Elevator buttons showing the missing 13th floor. Photo by Sgerbic, public domain, via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Missing_Floor_13.jpg).](https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Missing_Floor_13.jpg/960px-Missing_Floor_13.jpg){#fig-elevator width="300"}
+:::
 
 Consider the possible results from that button press:
 

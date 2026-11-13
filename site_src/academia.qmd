@@ -10,6 +10,29 @@ Remember that believing we know something exactly, with no uncertainty at all, i
 high certainty based on evidence. Academic institutions are not a monolith, so consensus is one of the most valuable pieces of evidence that we have.
 If research results hold up consistently regardless of which institution produces them, then we can be confident that we are heading in the right direction.
 
-<!-- TODO: transition sentence(s) here -->
+The waters seemed to be muddied in 2011 by something called the replication crisis. Although initially frightening, this crisis was also what Aubrey Clayton called an opportunity, titling a chapter "The Replication Crisis/Opportunity" [@clayton_bernoullis_2021, chap. 6].
 A paper titled "Feeling the Future" hypothesized psi [@bem_feeling_2011]. The evidence appeared solid and the methods were standard for the field, but with the power of Bayesianism, we are able to see that,
-due to the low priors, the posterior should not be moved much on the strength of a single work.
+due to the low priors, the posterior should not be moved much on the strength of a single work. Clayton cites an article by Eric-Jan Wagenmakers of the University of Amsterdam's Department of Psychology explaining the Bayesian argument about the results [@wagenmakers2011].
+Essentially, Wagenmakers's first argument, the relevant one here, explained: "Given a very low prior probability for the existence of ESP, even strong evidence in favor of it should leave the reader with a very low posterior probability."
+
+Clayton's book walks through several further papers that were not easily replicated.
+Some of these were hard for me personally to hear at first. One of my favorite books before this was *You Are Not So Smart* by David McRaney [@mcraney_2011], and some of the studies used within it were discredited due to a lack of replication.
+Fortunately, the book was written well. The author is a science journalist, so instead of the book becoming archaic or completely inaccurate, some of the chapters became outdated or exaggerated while others remained reasonable.
+McRaney cited sources for each chapter and used a variety of evidence, so while some chapters may now be inaccurate, others remained untouched.
+
+Even studies used in *Thinking, Fast and Slow* by Daniel Kahneman were discredited [@kahneman_2011].
+Kahneman was a very accomplished researcher in the field of psychology, but the book is sometimes criticized not for its actual contents but for how it has affected the non-scientific community. The System 1 and System 2 language that he used in the book
+has become fairly common, but people often forget what he makes clear early on. Kahneman writes, "System 1 and System 2 are so central to the story I tell in this book that I must make it absolutely clear that they are fictitious characters." [@kahneman_2011, p. 66]
+In the book, he creates a model where System 1 and System 2 are agents that perform different tasks and have distinct personalities. This model is useful but not accurate to the research. The purpose of the book was not to turn readers into psychologists but to explain a complex topic
+in a way that is heuristically useful. In that context, a few discredited studies have only a minor impact on the book compared with the entire body of work Kahneman drew on, much of which he helped create. The issue was that I emotionally wanted complete trust in these works.
+That was dogmatic, but completely dismissing every sentence as incorrect because of this would have been just as dogmatic. Instead, the proper way to go about this is to use these works as evidence and to update each takeaway when new evidence is added.
+
+It is also sometimes useful to have a model that is inaccurate overall but good enough for certain situations. In the analytical physics class I took in the spring of my freshman year, we discussed a flat Earth model and used it for projectile physics. Is it wrong? Completely, but it was helpful and accurate enough for what we were calculating.
+In differential geometry, the traditional geometric assumptions and methods we learn in school before that point are shattered, and yet I still use those shattered assumptions when they are useful. I understand that the parallel postulate is just an axiom that we can change, and in fact Einstein based his general theory of relativity on differential geometry, but models can be incorrect and useful at the same time.
+
+Overall, humility in being wrong and a willingness to update are paramount to science and academia. Instead of looking at academia as a place that tries to erase the past, we should see it as a place where the past is considered and built upon. So how much should we trust academia? Well, it depends on context. If a paper claims something strange, don't write it off immediately; look for more information and see if your posteriors update.
+Occasionally, mainstream academic ideas will be incorrect, but they will update and change over time. Realize that certain ideas have been forged over time and would require a large amount of evidence to change, while others have not been considered so heavily. Reflect and seek more information; question the results, but don't assume that they are wrong or untrustworthy just because they are strange and new.
+Understand that most professors and researchers are doing their best to produce good information and teach accurate knowledge. A single person cannot know everything, so sometimes it is best to defer to the opinions of experts. While imperfect, this will allow you to spend more time on the information that you care about.
+
+A paradox, in De Morgan's sense, is usually born out of distrust without the desire to update based on evidence. Sometimes a paradox can
+be true, but only believe it if the evidence is extreme enough to bring a tiny prior to a heavy posterior.

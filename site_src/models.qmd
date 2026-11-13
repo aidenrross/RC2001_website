@@ -8,6 +8,10 @@ that a model uses assumptions and works within a given universe.
 For example, consider the band Ghost. In 2013 they released a cover of Roky Erickson's song "If You Have Ghosts" [@ghost2013]. One of the lines in the lyrics reads almost like an implication: "If you have ghosts, you have everything."
 Normally you would read this metaphorically, but if we change the model through definitions, we can change the meaning.
 
+::: {style="float: right; margin-left: 20px; margin-bottom: 10px;"}
+![Ghost at Roseland Theater, Portland, Oregon, 2015. Photo by darklenzes, [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/), via [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Ghost_-_Roseland_Theater,_Oregon,_2015.jpg).](https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Ghost_-_Roseland_Theater%2C_Oregon%2C_2015.jpg/960px-Ghost_-_Roseland_Theater%2C_Oregon%2C_2015.jpg){#fig-ghost width="300"}
+:::
+
 Let *ghosts* mean specifically the band, and let *everything* be defined as music. These definitions will make up our model.
 Then consider that if you listen to Ghost's cover, you have ghosts.
 Thus, in our model, by modus ponens we have everything, or in other words, we have music.
